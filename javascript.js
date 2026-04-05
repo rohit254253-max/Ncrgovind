@@ -1,9 +1,9 @@
 function callNow() {
-  window.location.href = "tel:+919999999999";
+  window.location.href = "tel:+918076874066";
 }
 
 function whatsappNow() {
-  window.open("https://wa.me/919999999999");
+  window.open("https://wa.me/918076874066");
 }
 
 function scrollToContact() {
