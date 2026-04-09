@@ -8,7 +8,7 @@ body {
 /* HERO */
 .hero {
   height:100vh;
-  background:url('https://images.unsplash.com/photo-1523966211575-eb4a01e7dd51') center/cover;
+  background:url('telphoto.jpg') center/cover;
 }
 
 .overlay {
