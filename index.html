@@ -1,77 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Trident Investigator</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trident Investigator</title>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <!-- HERO -->
 <section class="hero">
-  <div class="overlay">
-    <h1>Trident Investigator</h1>
-    <p>Uncover the Truth with Professional Investigation</p>
-    <button onclick="scrollToContact()">Contact Now</button>
-  </div>
+<div class="overlay">
+<h1>Trident Investigator</h1>
+<p>Professional Investigation Services</p>
+
+<a href="tel:+918076874066">
+<button>Call Now</button>
+</a>
+
+<a href="https://wa.me/918076874066">
+<button>WhatsApp</button>
+</a>
+
+</div>
 </section>
+
 
 <!-- SERVICES -->
 <section class="services">
-  <h2>Services</h2>
+<h2>Services</h2>
 
-  <div class="card">
-    <h3>Pre-marital Investigation</h3>
-    <p>Background verification before marriage</p>
-    <button>Book Now</button>
-  </div>
+<div class="card">
+<img src="images/service1.jpg">
+<h3>Pre Matrimonial</h3>
+<p>Background verification before marriage</p>
+<button onclick="scrollToForm()">Book Now</button>
+</div>
 
-  <div class="card">
-    <h3>Surveillance Services</h3>
-    <p>Track activities with proof</p>
-    <button>Book Now</button>
-  </div>
-
-  <div class="card">
-    <h3>Corporate Investigation</h3>
-    <p>Employee & fraud verification</p>
-    <button>Book Now</button>
-  </div>
+<div class="card">
+<img src="images/service2.jpg">
+<h3>Surveillance</h3>
+<p>Track activities with evidence</p>
+<button onclick="scrollToForm()">Book Now</button>
+</div>
 
 </section>
+
 
 <!-- ABOUT -->
 <section class="about">
-  <h2>About Us</h2>
-  <p>
-    Trident Investigator is a professional detective agency delivering confidential and reliable investigation services.
-  </p>
+<h2>About Us</h2>
+<p>
+Professional detective agency providing confidential
+and reliable investigation services.
+</p>
 </section>
 
-<!-- WHY -->
-<section class="why">
-  <h2>Why Choose Us</h2>
-  <ul>
-    <li>✔ 100% Confidential</li>
-    <li>✔ Expert Team</li>
-    <li>✔ Accurate Reports</li>
-  </ul>
+
+<!-- BOOKING FORM -->
+<section class="booking" id="booking">
+<h2>Book Appointment</h2>
+
+<form action="https://formsubmit.co/your@email.com" method="POST">
+
+<input type="text" name="name" placeholder="Your Name" required>
+
+<input type="tel" name="phone" placeholder="Phone Number" required>
+
+<select name="service">
+<option>Pre Matrimonial</option>
+<option>Surveillance</option>
+<option>Corporate</option>
+</select>
+
+<textarea name="message" placeholder="Your Requirement"></textarea>
+
+<button type="submit">Book Appointment</button>
+
+</form>
+
 </section>
 
-<!-- TESTIMONIAL -->
-<section class="testimonials">
-  <h2>Success Stories</h2>
-  <p>"Very professional and reliable service."</p>
-</section>
 
-<!-- CONTACT -->
-<section class="contact" id="contact">
-  <h2>Contact Us</h2>
-  <button onclick="callNow()">Call Now</button>
-  <button onclick="whatsappNow()">WhatsApp</button>
-</section>
+<script>
+function scrollToForm(){
+document.getElementById("booking").scrollIntoView({
+behavior:"smooth"
+})
+}
+</script>
 
-<script src="script.js"></script>
 </body>
 </html>
